@@ -46,3 +46,6 @@
             position:relative;
             text-align: center;
         }
+ a:link { color: green; text-decoration: none;}
+ a:visited { color: green; text-decoration: none;}
+ a:hover { color: blue; text-decoration: underline;}

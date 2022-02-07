@@ -1,0 +1,49 @@
+@font-face {
+            font-family: 'Recipekorea';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Recipekorea';
+            
+        }
+
+        #center {
+            text-align: center;
+        }
+
+        #ifm {
+            width: 500px;
+            height: 50px;
+            font-family: 'Recipekorea';
+            border:none;
+            background-color:lightgray;
+            border-radius: 10px;
+            position:relative;
+            top:100px;
+            
+            
+        }
+        #title{
+            position: relative;
+            text-align: center;
+            top:100px;
+        }
+        #change{
+            position: relative;
+            text-align: center;
+            top:100px;
+            font-size:20px;
+        }
+        #maker{
+            position: absolute;
+            right: 0px;
+            bottom:0px;
+        }
+        #gonggi{
+            font-size: 20px;
+            position:relative;
+            text-align: center;
+        }

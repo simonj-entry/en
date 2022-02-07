@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short link generator</title>
+    <link rel="shortcut icon" type="image/x-icon" href="sb.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id = 'gonggi'>Short link generator!</h1>
+    <h1 id = 'title'>Short Link Generator! Shorten complex links!</h1>
+    <h1 id='center'><input type='text' id='ifm' placeholder="Enter the url of your website!"></h1>
+    <h1 id = 'change'>Press Enter to create a shortcut!</h1>
+    <p id = 'maker'>Made by Piano(<a href="https://urlshortener.rronny70.repl.co/">
+original link</a>)</p>
+    
+    <script>
+        addEventListener('keydown', (event) => {
+            if (event.key == 'Enter') {
+                const name = document.querySelector('#ifm').value;
+                async function la() {
+                    let data = await fetch( "https://lrl.kr/api.php/?url="+ name + "&format=json");
+                    let a = await data.json()
+                    document.querySelector('#title').innerHTML = 'Short link complete!';
+                    document.querySelector('#change').innerHTML = a.url;
+                };
+                la();
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>
